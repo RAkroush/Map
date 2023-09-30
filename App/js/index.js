@@ -19,7 +19,52 @@ xui.Class('App', 'xui.Module',{
         iniComponents : function(){
             // [[Code created by CrossUI RAD Studio
             var host=this, children=[], append=function(child){children.push(child.get(0));};
-
+            
+            append(
+                xui.create("xui.UI.Button")
+                .setHost(host,"xui_ui_button3")
+                .setLeft("27.428571428571427em")
+                .setTop("20.571428571428573em")
+                .setCaption("Button")
+            );
+            
+            append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label7")
+                .setLeft("26.666666666666668em")
+                .setTop("6.095238095238095em")
+                .setWidth("7.0095238095238095em")
+                .setHeight("1.980952380952381em")
+                .setCaption("Label")
+            );
+            
+            append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label8")
+                .setLeft("27.428571428571427em")
+                .setTop("9.142857142857142em")
+                .setWidth("7.0095238095238095em")
+                .setHeight("2.742857142857143em")
+                .setCaption("Label")
+            );
+            
+            append(
+                xui.create("xui.UI.ComboInput")
+                .setHost(host,"xui_ui_comboinput3")
+                .setLeft("22.857142857142858em")
+                .setTop("16em")
+                .setWidth("18em")
+                .setLabelSize("8em")
+                .setLabelCaption("Number Input")
+                .setType("number")
+            );
+            
+            append(
+                xui.create("xui.UI.HiddenInput")
+                .setHost(host,"xui_ui_hiddeninput1")
+                .setValue("")
+            );
+            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
